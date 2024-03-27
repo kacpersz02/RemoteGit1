@@ -21,7 +21,20 @@ int main() {
 		cout << "MENU" << endl;
 		cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
 		cout << "0. Wyjscie" << endl;
+		cout << "1. Silnia" << endl;
 		cin >> wyjscie;
+		switch(wyjscie)
+		{
+			case 1:
+				{
+					int wynik = silnia(n);
+					cout << a << "! = " << wynik << endl;
+				}
+			default:
+				{
+					break;
+				}
+		}
 	}while(wyjscie != 0);
 	return 0;
 }
