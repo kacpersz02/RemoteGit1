@@ -31,7 +31,26 @@ int main() {
 		cout << "MENU" << endl;
 		cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
 		cout << "0. Wyjscie" << endl;
+		cout << "1. Sprawdz czy liczba jest pierwsza" << endl;
 		cin >> wyjscie;
+		switch(wyjscie)
+		{
+			case 1:
+				{
+					if(czyPierwsza(n))
+					{
+						cout << a << " jest liczba pierwsza" << endl;
+					}
+					else
+					{
+						cout << a << " nie jest liczba pierwsza" << endl;
+					}
+				}
+			default:
+				{
+					break;
+				}
+		}
 	}while(wyjscie != 0);
 	return 0;
 }
